@@ -57,6 +57,6 @@ public class PlayerControllerMaze : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)    
     {
-        Application.LoadLevel(1);    
+        Application.LoadLevel(2);    
     }
 }
