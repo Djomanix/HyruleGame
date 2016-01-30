@@ -53,16 +53,11 @@
      <Compile Include="Assets\Scripts\PLayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerControllerMaze.cs" />
      <Compile Include="Assets\Scripts\PlayerOverworldController.cs" />
+     <Compile Include="Assets\Scripts\ZControlScript.cs" />
      <Compile Include="Assets\Scripts\rockController.cs" />
      <None Include="Assets\Animations\empty.txt" />
      <None Include="Assets\Resources\Sons\empty.txt" />
      <None Include="Assets\_Scenes\empty.txt" />
-<<<<<<< HEAD
-=======
-     <None Include="Assets\Resources\empty.txt" />
-     <None Include="Assets\Animations\Clips\empty.txt" />
-     <None Include="Assets\Animations\Controllers\empty.txt" />
->>>>>>> origin/master
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
