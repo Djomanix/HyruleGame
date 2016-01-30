@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\PLayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerControllerMaze.cs" />
     <Compile Include="Assets\Scripts\PlayerOverworldController.cs" />
+    <Compile Include="Assets\Scripts\ZControlScript.cs" />
     <Compile Include="Assets\Scripts\rockController.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,7 +76,6 @@
     <None Include="Assets\Animations\Controllers\empty.txt" />
     <None Include="Assets\Animations\empty.txt" />
     <None Include="Assets\Resources\Sons\empty.txt" />
-    <None Include="Assets\Resources\empty.txt" />
     <None Include="Assets\_Scenes\empty.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
