@@ -56,3 +56,4 @@ HyruleGame.sln
 obj/
 Assets/Resources/Backgrounds.meta
 *.suo
+Assembly-CSharp.csproj
