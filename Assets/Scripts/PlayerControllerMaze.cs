@@ -26,9 +26,6 @@ public class PlayerControllerMaze : MonoBehaviour
         if (temp.x > -20 && temp.x < 20)
             rb.position = temp;
         rb.transform.rotation = Quaternion.Euler(0.0f, 0.0f, -moveHorizontal * 10 + 1);
-
-        GameObject cam = GameObject.Find("Main Camera");
-
     }
     void OnTriggerEnter2D(Collider2D other)
     {
