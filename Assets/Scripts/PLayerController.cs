@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PLayerController : MonoBehaviour {
+public class PLayerController : MonoBehaviour
+{
 
     private AudioSource rockGet = new AudioSource();
     private Rigidbody rb;
@@ -10,30 +11,31 @@ public class PLayerController : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         rockGet = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
 
         rb.transform.position += movement * speed;
-    }
 
+        rb.transform.rotation = Quaternion.Euler(0.0f, 0.0f, -moveHorizontal * 10 + 1);
+    }
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "allo")
+        if (other.tag == "allo")
         {
             Debug.Log("hit");
             rockGet.Play();
             Destroy(other.gameObject);
         }
     }
-
 }
