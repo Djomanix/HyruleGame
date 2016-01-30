@@ -42,7 +42,6 @@ public class PLayerController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-
         rockGet.Play();
         Destroy(other.gameObject);
         playerScore += 25;
