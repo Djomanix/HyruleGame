@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
      <Compile Include="Assets\Scripts\MazeGenerator.cs" />
      <Compile Include="Assets\Scripts\PLayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerControllerMaze.cs" />
      <Compile Include="Assets\Scripts\rockController.cs" />
      <None Include="Assets\Animations\empty.txt" />
      <None Include="Assets\Resources\Sons\empty.txt" />
