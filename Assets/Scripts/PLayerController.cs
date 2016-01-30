@@ -28,23 +28,23 @@ public class PLayerController : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0.0f);
-        
-        rb.transform.position += movement * speed;
-        Vector3 temp = rb.position;
-        temp.x = Mathf.Clamp(rb.position.x, -20.0f, 20.0f);
-        rb.position = temp;
+
+        Vector3 temp = rb.transform.position;
+
+        temp += movement * speed;
+
+        if (temp.x > -20 && temp.x < 20)
+            rb.position = temp;
 
         rb.transform.rotation = Quaternion.Euler(0.0f, 0.0f, -moveHorizontal * 10 + 1);
 
         textbox.text = "Score: " + playerScore;
     }
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "allo")
-        {
-            rockGet.Play();
-            Destroy(other.gameObject);
-            playerScore += 25;
-        }
+
+        rockGet.Play();
+        Destroy(other.gameObject);
+        playerScore += 25;
     }
 }
