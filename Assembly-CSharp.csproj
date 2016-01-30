@@ -53,6 +53,7 @@
      <Compile Include="Assets\Game Jam Menu Template\Scripts\SetAudioLevels.cs" />
      <Compile Include="Assets\Game Jam Menu Template\Scripts\ShowPanels.cs" />
      <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
+     <Compile Include="Assets\Scripts\AI\StackFSM.cs" />
      <Compile Include="Assets\Scripts\CatchDropController.cs" />
      <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
      <Compile Include="Assets\Scripts\MazeGenerator.cs" />
