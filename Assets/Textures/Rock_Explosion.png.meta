@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 51cb733624d17e342a62f3448265edfe
+timeCreated: 1454172756
+=======
+guid: 2c429fb7eab4b644cb18e2f285e23e0f
+timeCreated: 1454171740
+>>>>>>> origin/master
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rock_Explosion_0
+    21300002: Rock_Explosion_2
+    21300004: Rock_Explosion_3
+    21300006: Rock_Explosion_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+<<<<<<< HEAD
+  spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> origin/master
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Rock_Explosion_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 122
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 0, z: 2, w: 0}
+      outline:
+      - - {x: -18, y: 28}
+        - {x: -56, y: -3}
+        - {x: -56, y: -38}
+        - {x: -47, y: -50}
+        - {x: 53, y: -50}
+        - {x: 61, y: -47}
+        - {x: 61, y: 16}
+        - {x: 39, y: 28}
+    - name: Rock_Explosion_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 114
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 32}
+        - {x: -18, y: 32}
+        - {x: -57, y: -4}
+        - {x: -57, y: -45}
+        - {x: -41, y: -50}
+        - {x: 40, y: -50}
+        - {x: 57, y: -38}
+        - {x: 57, y: 13}
+    - name: Rock_Explosion_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 129
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 35}
+        - {x: 18.5, y: 32}
+        - {x: 23.5, y: 36}
+        - {x: 23.5, y: 39}
+        - {x: 22.5, y: 41}
+        - {x: -1.5, y: 41}
+        - {x: -6.5, y: 39}
+        - {x: -42.5, y: 19}
+        - {x: -53.5, y: 7}
+        - {x: -52.5, y: 2}
+        - {x: -44.5, y: -2}
+        - {x: -28.5, y: -8}
+        - {x: -25.5, y: -8}
+        - {x: -24.5, y: -9}
+        - {x: -25.5, y: -9}
+        - {x: -35.5, y: -7}
+        - {x: -38.5, y: -5}
+        - {x: -48.5, y: -1}
+        - {x: -53.5, y: 0}
+        - {x: -64.5, y: -14}
+        - {x: -64.5, y: -34}
+        - {x: -43.5, y: -50}
+        - {x: 43.5, y: -50}
+        - {x: 64.5, y: -46}
+        - {x: 64.5, y: 20}
+        - {x: 38.5, y: 38}
+    - name: Rock_Explosion_5
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 0
+        width: 168
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: -7}
+        - {x: -15, y: -7}
+        - {x: -42, y: -37}
+        - {x: -42, y: -44}
+        - {x: -32, y: -50}
+        - {x: 41, y: -50}
+        - {x: 53, y: -39}
+        - {x: 53, y: -19}
+        - {x: 52, y: -13}
+      - - {x: -36, y: 5}
+        - {x: -75, y: 5}
+        - {x: -84, y: -2}
+        - {x: -84, y: -35}
+        - {x: -55, y: -39}
+        - {x: -45, y: -39}
+        - {x: -30, y: -24}
+        - {x: -22, y: -9}
+        - {x: -22, y: 3}
+      - - {x: 30, y: 46}
+        - {x: 16, y: 21}
+        - {x: 16, y: 0}
+        - {x: 47, y: -9}
+        - {x: 83, y: -9}
+        - {x: 83, y: 33}
+        - {x: 80, y: 46}
+      - - {x: -6, y: 50}
+        - {x: -43, y: 33}
+        - {x: -50, y: 20}
+        - {x: -50, y: 8}
+        - {x: -39, y: 2}
+        - {x: -7, y: 2}
+        - {x: 25, y: 19}
+        - {x: 26, y: 26}
+        - {x: 26, y: 50}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
