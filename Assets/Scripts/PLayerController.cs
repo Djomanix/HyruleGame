@@ -6,7 +6,7 @@ public class PLayerController : MonoBehaviour
 {
 
     private AudioSource rockGet = new AudioSource();
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     public float speed;
     Vector3 movement;
     private int playerScore;
@@ -18,7 +18,7 @@ public class PLayerController : MonoBehaviour
     void Start()
     {
         rockGet = GetComponent<AudioSource>();
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         playerScore = 0;
     }
 
