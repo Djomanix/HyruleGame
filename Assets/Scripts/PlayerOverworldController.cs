@@ -7,8 +7,9 @@ public class PlayerOverworldController : MonoBehaviour {
 	Rigidbody2D rb;
 
 	Vector3 dir;
+	//Vector3 temp = new Vector3(0, 0, 0);
 
-	public float speed = 1.0f;
+	public float speed = 0.1f;
 
 	// Use this for initialization
 	void Start ()
@@ -25,6 +26,15 @@ public class PlayerOverworldController : MonoBehaviour {
 		float vertical = Input.GetAxis ("Vertical");
 
 		Vector3 movement = new Vector3(horizontal, vertical, 0.0f);
+
+		if(Input.GetKey (KeyCode.LeftShift))
+		{
+			speed = 0.5f;
+		}
+		else
+		{
+			speed = 0.1f;
+		}
 
 		if(horizontal != 0 || vertical != 0)
 		{

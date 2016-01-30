@@ -4,7 +4,6 @@ using System.Collections;
 public class rockController : MonoBehaviour {
 
     private float speed;
-    private Animator animator;
 
 
 	// Use this for initialization
