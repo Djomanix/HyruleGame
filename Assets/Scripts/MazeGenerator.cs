@@ -36,15 +36,22 @@ public class MazeGenerator : MonoBehaviour
                 {
                     GameObject wall = (GameObject)Instantiate(Resources.Load("Maze/maze_wall"));
                     wall.transform.position = new Vector3(x, y, 0);
-                    if (begining)
-                    {
-
-                    }
                 }
                 else
                 {
                     GameObject floor = (GameObject)Instantiate(Resources.Load("Maze/maze_floor"));
                     floor.transform.position = new Vector3(x, y, 0);
+                    if (begining)
+                    {
+                        GameObject player = (GameObject)Instantiate(Resources.Load("Maze/Player_Head"));
+                        player.transform.position = new Vector3(x, y, 0);
+                        begining = false;
+                    }
+                    
+                    GameObject d = GameObject.FindGameObjectWithTag("rock");
+					DestroyImmediate(d);
+                    GameObject goal = (GameObject)Instantiate(Resources.Load("Maze/rock"));
+                    goal.transform.position = new Vector3(x, y, 0);
                 }
             }
         }
