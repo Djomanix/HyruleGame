@@ -36,14 +36,14 @@ public class PLayerController : MonoBehaviour
         if (temp.x > -20 && temp.x < 20)
             rb.position = temp;
 
-        rb.transform.rotation = Quaternion.Euler(0.0f, 0.0f, -moveHorizontal * 10 + 1);
+        rb.transform.rotation = Quaternion.Euler(0.0f, 0.0f, -moveHorizontal * 15);
 
         textbox.text = "Score: " + playerScore;
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         rockGet.Play();
-        Destroy(other.gameObject);
+        other.gameObject.GetComponent<Animator>().SetTrigger("explode");
         playerScore += 25;
     }
 }
