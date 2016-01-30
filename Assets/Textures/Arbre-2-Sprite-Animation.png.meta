@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 7f6d8c1c5f449e8489a12e55354ebe0b
+timeCreated: 1454154127
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Arbre-2-Sprite-Animation_0
+    21300002: Arbre-2-Sprite-Animation_1
+    21300004: Arbre-2-Sprite-Animation_2
+    21300006: Arbre-2-Sprite-Animation_3
+    21300008: Arbre-2-Sprite-Animation_4
+    21300010: Arbre-2-Sprite-Animation_5
+    21300012: Arbre-2-Sprite-Animation_6
+    21300014: Arbre-2-Sprite-Animation_7
+    21300016: Arbre-2-Sprite-Animation_9
+    21300018: Arbre-2-Sprite-Animation_10
+    21300020: Arbre-2-Sprite-Animation_11
+    21300022: Arbre-2-Sprite-Animation_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Arbre-2-Sprite-Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 245
+        height: 313
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_1
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 247
+        height: 313
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_2
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 0
+        width: 244
+        height: 313
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_3
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 0
+        width: 238
+        height: 313
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_4
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 0
+        width: 245
+        height: 312
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 0
+        width: 246
+        height: 311
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_6
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 0
+        width: 247
+        height: 311
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_7
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 0
+        width: 244
+        height: 313
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_9
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 3
+        width: 245
+        height: 309
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_10
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 0
+        width: 245
+        height: 308
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_11
+      rect:
+        serializedVersion: 2
+        x: 2684
+        y: 0
+        width: 244
+        height: 308
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arbre-2-Sprite-Animation_8
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 0
+        width: 244
+        height: 313
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

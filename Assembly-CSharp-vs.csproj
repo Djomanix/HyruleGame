@@ -46,6 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CatchDropController.cs" />
+     <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
+     <Compile Include="Assets\Scripts\MazeGenerator.cs" />
      <Compile Include="Assets\Scripts\PLayerController.cs" />
      <Compile Include="Assets\Scripts\rockController.cs" />
      <None Include="Assets\Animations\empty.txt" />
@@ -53,7 +56,6 @@
      <None Include="Assets\_Scenes\empty.txt" />
      <None Include="Assets\Resources\empty.txt" />
      <None Include="Assets\Animations\Clips\empty.txt" />
-     <None Include="Assets\Textures\empty.txt" />
      <None Include="Assets\Animations\Controllers\empty.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
