@@ -7,11 +7,13 @@ public class PlayerControllerMaze : MonoBehaviour
     private Rigidbody2D rb;
     public float speed;
     Vector3 movement;
+    private AudioSource[] impactSons;
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        impactSons = GetComponents<AudioSource>();
     }
 
     // Update is called once per frame
@@ -27,8 +29,24 @@ public class PlayerControllerMaze : MonoBehaviour
             rb.position = temp;
         rb.transform.rotation = Quaternion.Euler(0.0f, 0.0f, -moveHorizontal * 10 + 1);
     }
-    void OnTriggerEnter2D(Collider2D other)
+
+    void OnCollisionEnter2D(Collision2D other)
     {
-        Application.LoadLevel(0);
+        if
+        (
+            other.gameObject.name == "maze_wall(Clone)"
+        )
+        {
+            // impactGet.Play();
+            impactSons[Random.Range(0,4)].Play();
+
+        }
+
+    }
+
+
+    void OnTriggerEnter2D(Collider2D other)    
+    {
+        Application.LoadLevel(0);    
     }
 }
