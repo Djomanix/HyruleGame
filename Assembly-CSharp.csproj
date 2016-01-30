@@ -47,8 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\PLayerController.cs" />
-     <Compile Include="Assets\_Scenes\NewBehaviourScript.cs" />
-     <None Include="Assets\Scripts\empty.txt" />
+     <Compile Include="Assets\Scripts\rockController.cs" />
      <None Include="Assets\Animations\empty.txt" />
      <None Include="Assets\Resources\Sons\empty.txt" />
      <None Include="Assets\_Scenes\empty.txt" />
