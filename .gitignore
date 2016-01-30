@@ -54,3 +54,5 @@ ProjectSettings/
 HyruleGame.sln
 *.userprefs
 obj/
+*.suo
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
