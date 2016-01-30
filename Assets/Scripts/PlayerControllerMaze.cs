@@ -8,6 +8,7 @@ public class PlayerControllerMaze : MonoBehaviour
     public float speed;
     Vector3 movement;
     private AudioSource[] impactSons;
+    private Vector3 wall_save;
 
     // Use this for initialization
     void Start()
@@ -32,21 +33,30 @@ public class PlayerControllerMaze : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        bool play = false;
         if
-        (
-            other.gameObject.name == "maze_wall(Clone)"
-        )
+        (other.gameObject.name == "maze_wall(Clone)" && !other.gameObject.transform.position.y.Equals(wall_save.y))
         {
             // impactGet.Play();
-            impactSons[Random.Range(0,4)].Play();
-
+            wall_save = other.gameObject.transform.position;
+            foreach (AudioSource son in impactSons)
+            {
+                if (!son.isPlaying && Input.GetAxis("Vertical") == 0)
+                {
+                    play = true;
+                }
+                else 
+                { 
+                    play = false;
+                }
+            }
+            if (play) { impactSons[Random.Range(0, 4)].Play(); play = false; }
         }
-
     }
 
 
     void OnTriggerEnter2D(Collider2D other)    
     {
-        Application.LoadLevel(0);    
+        Application.LoadLevel(1);    
     }
 }
