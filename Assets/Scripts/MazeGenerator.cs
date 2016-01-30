@@ -12,11 +12,13 @@ public class MazeGenerator : MonoBehaviour
     public int width;
     int[,] maze;
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         maze = new int[height, width];
         maze = generateMaze();
+        correctMaze();
         render();
-	}
+    }
 
     // Update is called once per frame
     void Update()
@@ -27,7 +29,7 @@ public class MazeGenerator : MonoBehaviour
     void render()
     {
         bool begining = true;
-        
+
         for (int y = 0; y < height; y++)
         {
             for (int x = 0; x < width; x++)
@@ -47,9 +49,9 @@ public class MazeGenerator : MonoBehaviour
                         player.transform.position = new Vector3(x, y, 0);
                         begining = false;
                     }
-                    
+
                     GameObject d = GameObject.FindGameObjectWithTag("rock");
-					DestroyImmediate(d);
+                    DestroyImmediate(d);
                     GameObject goal = (GameObject)Instantiate(Resources.Load("Maze/rock"));
                     goal.transform.position = new Vector3(x, y, 0);
                 }
@@ -57,39 +59,42 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
-    public int[,] generateMaze() {
-    int[,] maze = new int[height, width];
-    // Initialize
-    for (int i = 0; i < height; i++)
-        for (int j = 0; j < width; j++)
-            maze[i, j] = 1;
- 
-     // r for row、c for column
-     // Generate random r
-     int r = Random.Range(0, height);
-     while (r % 2 == 0) {
-         r = Random.Range(0, height);
-     }
-     // Generate random c
-     int c = Random.Range(0, width);
-     while (c % 2 == 0) {
-         c = Random.Range(0, width);
-     }
-     // Starting cell
-     maze[r, c] = 0;
- 
-     //　Allocate the maze with recursive method
-     maze = recursion(r, c, maze);
-	
-     return maze;
- }
-	public int[,] recursion(int r, int c, int[,] maze)
+    public int[,] generateMaze()
     {
-		int[,] m = new int[height, width];
+        int[,] maze = new int[height, width];
+        // Initialize
+        for (int i = 0; i < height; i++)
+            for (int j = 0; j < width; j++)
+                maze[i, j] = 1;
 
-		m = maze;
-        
-		// 4 random directions
+        // r for row、c for column
+        // Generate random r
+        int r = Random.Range(0, height);
+        while (r % 2 == 0)
+        {
+            r = Random.Range(0, height);
+        }
+        // Generate random c
+        int c = Random.Range(0, width);
+        while (c % 2 == 0)
+        {
+            c = Random.Range(0, width);
+        }
+        // Starting cell
+        maze[r, c] = 0;
+
+        //　Allocate the maze with recursive method
+        maze = recursion(r, c, maze);
+
+        return maze;
+    }
+    public int[,] recursion(int r, int c, int[,] maze)
+    {
+        int[,] m = new int[height, width];
+
+        m = maze;
+
+        // 4 random directions
         int[] randDirs = generateRandomDirections();
         // Examine each direction
         for (int i = 0; i < randDirs.Length; i++)
@@ -143,7 +148,7 @@ public class MazeGenerator : MonoBehaviour
                     break;
             }
         }
-		return m;
+        return m;
     }
 
     /**
@@ -162,6 +167,20 @@ public class MazeGenerator : MonoBehaviour
             }
         }
         return randoms.ToArray();
-        
+
+    }
+
+    public void correctMaze()
+    {
+        for (int x = 0; x < height; x++)
+        {
+            for (int y = 0; y < width; y++)
+            {
+                if (y == 0 || x == 0 || y == width-1 || x == height-1)
+                {
+                    maze[x, y] = 1;
+                }
+            }
+        }
     }
 }
