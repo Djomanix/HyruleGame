@@ -49,7 +49,6 @@ Temp/UnityLockfile
 Temp/
 Library/
 Library/metadata/00/00000000000000002000000000000000
-ProjectSettings/
 *.csproj
 HyruleGame.sln
 *.userprefs
