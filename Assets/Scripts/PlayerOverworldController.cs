@@ -6,6 +6,11 @@ public class PlayerOverworldController : MonoBehaviour {
 	Animator anim;
 	Rigidbody2D rb;
 
+	public Transform spawnPoint;
+
+	int sortOrder = 1;
+	public bool isBehind = false;
+
 	Vector3 dir;
 	//Vector3 temp = new Vector3(0, 0, 0);
 
@@ -17,6 +22,8 @@ public class PlayerOverworldController : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		dir = rb.transform.localScale;
+
+		transform.position = spawnPoint.position;
 	}
 	
 	// Update is called once per frame
@@ -25,7 +32,7 @@ public class PlayerOverworldController : MonoBehaviour {
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis ("Vertical");
 
-		Vector3 movement = new Vector3(horizontal, vertical, 0.0f);
+		Vector3 movement = new Vector3(horizontal, vertical, vertical);
 
 		if(Input.GetKey (KeyCode.LeftShift))
 		{
@@ -47,12 +54,27 @@ public class PlayerOverworldController : MonoBehaviour {
 
 		rb.transform.position += movement * speed;
 
-		if(horizontal < 0)
-			dir.x = -1;
-		else if (horizontal > 0)
-			dir.x = 1;
+		if(horizontal < 0 && dir.x == 2)
+			dir.x = -2;
+		else if (horizontal > 0 && dir.x == -2)
+			dir.x = 2;
 
-		rb.transform.localScale = dir;
-	
+		rb.transform.localScale = dir;	
 	}
+
+	void OnTriggerStay2D(Collider2D other)
+	{
+		isBehind = true;
+	}
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if(!isBehind)
+		{
+			GetComponent<Renderer>().sortingOrder = sortOrder;
+		}
+
+		isBehind = false;
+	}
+
 }
