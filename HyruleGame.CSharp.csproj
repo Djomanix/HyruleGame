@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\ZControlScript.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />
     <Compile Include="Assets\Scripts\rockController.cs" />
+    <Compile Include="Assets\amuletteController.cs" />
     <Compile Include="Assets\smokeController.cs" />
   </ItemGroup>
   <ItemGroup>
