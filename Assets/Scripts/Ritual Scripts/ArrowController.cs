@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ArrowController : MonoBehaviour {
 
-	float speed = 3.0f;
+	float speed = 4.5f;
 
 	// Use this for initialization
 	void Start () {

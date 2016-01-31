@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerDanceScript : MonoBehaviour {
 
 	Animator anim;
+	int danceNum = 0;
 
 	// Use this for initialization
 	void Start () 
@@ -15,7 +16,7 @@ public class PlayerDanceScript : MonoBehaviour {
 	void Update () 
 	{
 
-		if(anim.GetInteger("DancingDir") == 0)
+		if(anim.GetInteger("DancingDir") == 0 || anim.GetInteger("DancingDir") == 5)
 		{
 			if(Input.GetKeyDown (KeyCode.LeftArrow))
 				anim.SetInteger ("DancingDir", 1);
@@ -31,7 +32,12 @@ public class PlayerDanceScript : MonoBehaviour {
 		}
 		else
 		{
-			anim.SetInteger ("DancingDir", 0);
+			anim.SetInteger ("DancingDir", danceNum);
 		}
+	}
+
+	public void SetDance(int num)
+	{
+		danceNum = 5;
 	}
 }
