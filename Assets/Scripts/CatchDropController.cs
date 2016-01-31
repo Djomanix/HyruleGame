@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CatchDropController : MonoBehaviour
 {
@@ -10,11 +11,30 @@ public class CatchDropController : MonoBehaviour
     public float startWait;
     public float waveWait;
 
+    private int timer;
+    public Text textbox;
+
     void Start()
     {
-        StartCoroutine(SpawnWaves());
+        StartCoroutine("SpawnWaves");
+        timer = 30;
     }
 
+    void Update()
+    {
+
+        if (timer == 0)
+        {
+            StopCoroutine("SpawnWaves");
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PLayerController>().SetMoving(false);
+        }
+        else
+        {
+            timer = 30 - (int)Time.time;
+            textbox.text = "Time: " + timer;
+        }
+       
+    }
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);

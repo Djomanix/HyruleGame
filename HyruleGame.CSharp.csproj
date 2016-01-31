@@ -69,7 +69,9 @@
     <Compile Include="Assets\Scripts\PLayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerControllerMaze.cs" />
     <Compile Include="Assets\Scripts\PlayerOverworldController.cs" />
+    <Compile Include="Assets\Scripts\TransitionScreen.cs" />
     <Compile Include="Assets\Scripts\ZControlScript.cs" />
+    <Compile Include="Assets\Scripts\movement.cs" />
     <Compile Include="Assets\Scripts\rockController.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\PlayerOverworldController.cs" />
      <Compile Include="Assets\Scripts\TransitionScreen.cs" />
      <Compile Include="Assets\Scripts\ZControlScript.cs" />
+     <Compile Include="Assets\Scripts\movement.cs" />
      <Compile Include="Assets\Scripts\rockController.cs" />
      <None Include="Assets\Animations\empty.txt" />
      <None Include="Assets\Resources\Sons\empty.txt" />
