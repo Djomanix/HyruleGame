@@ -26,10 +26,12 @@ public class CatchDropController : MonoBehaviour
         if (timer == 0)
         {
             StopCoroutine("SpawnWaves");
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PLayerController>().SetMoving(false);
+            gameObject.GetComponent<SceneFadeInFadeOut>().EndScene(0);
         }
         else
         {
-            timer = 30 - (int)Time.time;
+            timer = 5 - (int)Time.time;
             textbox.text = "Time: " + timer;
         }
        
