@@ -6,11 +6,13 @@ public class movement : MonoBehaviour {
     private bool sense;
     private bool moving;
     private int i;
+    private AudioSource[] getSons;
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
         sense = false;
         moving = true;
+        getSons = GetComponents<AudioSource>();
         i = 0;
     }
 	
@@ -25,12 +27,22 @@ public class movement : MonoBehaviour {
 
                 if (rb.transform.position.x > -1.5 && rb.transform.position.x < 1.5)
                 {
+                    getSons[0].Play();
                     Destroy(GameObject.Find("LogMiniJeux" + i));
                     i++;
                 }
-                if (i == 3)
+                else
                 {
+                    print("miss");
+                    getSons[1].Play();
+                }
+                if (i == 4)
+                {
+                    
+                    getSons[2].Play();
+                    
                     Application.LoadLevel(2);
+                    
                 }
             }
 
@@ -58,14 +70,7 @@ public class movement : MonoBehaviour {
           
 
         }
-        else 
-        {
-            int i = 5;
-            if (rb.transform.position.x > -1.5 && rb.transform.position.x < 1.5)
-            {
-            }
-        }
-        
+              
     }
 
     IEnumerator MoveAgain()
