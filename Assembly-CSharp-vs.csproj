@@ -46,7 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\SceneFadeInFadeOut.cs" />
+     <Compile Include="Assets\SceneFadeInFadeOut 1.cs" />
      <Compile Include="Assets\Scripts\CatchDropController.cs" />
      <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
      <Compile Include="Assets\Scripts\FollowPlayerScript.cs" />
@@ -56,7 +56,7 @@
      <Compile Include="Assets\Scripts\PlayerOverworldController.cs" />
      <Compile Include="Assets\Scripts\TransitionScreen.cs" />
      <Compile Include="Assets\Scripts\ZControlScript.cs" />
-     <Compile Include="Assets\Scripts\movement.cs" />
+     <Compile Include="Assets\Scripts\movement 1.cs" />
      <Compile Include="Assets\Scripts\rockController.cs" />
      <Compile Include="Assets\smokeController.cs" />
      <None Include="Assets\Animations\empty.txt" />
