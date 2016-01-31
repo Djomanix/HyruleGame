@@ -5,14 +5,19 @@ using UnityEngine.UI;
 public class PLayerController : MonoBehaviour
 {
 
-    private AudioSource rockGet = new AudioSource();
-    private Rigidbody2D rb;
+    AudioSource rockGet = new AudioSource();
+    Rigidbody2D rb;
     public float speed;
-    Vector3 movement;
-    private int playerScore;
+    int playerScore;
 
     public Text textbox;
 
+    Vector3 temp;
+    Vector3 movement;
+
+    float moveHorizontal;
+
+    bool Moving;
 
     // Use this for initialization
     void Start()
@@ -20,22 +25,24 @@ public class PLayerController : MonoBehaviour
         rockGet = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         playerScore = 0;
+        Moving = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
+        if (Moving)
+        {
+            moveHorizontal = Input.GetAxis("Horizontal");
+            movement = new Vector3(moveHorizontal, 0.0f, 0.0f);
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0.0f);
+            temp = rb.transform.position;
+            temp += movement * speed;
 
-        Vector3 temp = rb.transform.position;
-
-        temp += movement * speed;
-
-        if (temp.x > -20 && temp.x < 20)
-            rb.position = temp;
-
+            if (temp.x > -20 && temp.x < 20)
+                rb.position = temp;
+        }
+        
         rb.transform.rotation = Quaternion.Euler(0.0f, 0.0f, -moveHorizontal * 15);
 
         textbox.text = "Score: " + playerScore;
@@ -45,5 +52,10 @@ public class PLayerController : MonoBehaviour
         rockGet.Play();
         other.gameObject.GetComponent<Animator>().SetTrigger("explode");
         playerScore += 25;
+    }
+
+    public void SetMoving(bool moving)
+    {
+        Moving = moving;
     }
 }
