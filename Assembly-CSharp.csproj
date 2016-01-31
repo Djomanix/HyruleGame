@@ -46,6 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ArrowController.cs" />
+     <Compile Include="Assets\HitScript.cs" />
+     <Compile Include="Assets\PlayerDanceScript.cs" />
+     <Compile Include="Assets\RitualController.cs" />
      <Compile Include="Assets\SceneFadeInFadeOut 1.cs" />
      <Compile Include="Assets\Scripts\CatchDropController.cs" />
      <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
