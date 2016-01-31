@@ -8,13 +8,18 @@ public class TransitionScreen : MonoBehaviour {
 
     private Vector3 tempPosition;
 
+    int opacity;
+
     void Start()
     {
         tempPosition = transform.position;
+        opacity = 100;
+
     }
 
     void Update()
     {
+        opacity--;
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Application.LoadLevel(1); 
