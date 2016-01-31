@@ -26,6 +26,7 @@ public class CatchDropController : MonoBehaviour
         if (timer == 0)
         {
             StopCoroutine("SpawnWaves");
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PLayerController>().SetMoving(false);
         }
         else
         {
