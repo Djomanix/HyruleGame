@@ -25,7 +25,7 @@ public class movement : MonoBehaviour {
                 moving = false;
                 StartCoroutine(MoveAgain());
 
-                if (rb.transform.position.x > -1.5 && rb.transform.position.x < 1.5)
+                if (rb.transform.position.x > -1.3 && rb.transform.position.x < 1.3)
                 {
                     getSons[0].Play();
                     Destroy(GameObject.Find("LogMiniJeux" + i));
@@ -35,6 +35,7 @@ public class movement : MonoBehaviour {
                 {
                     print("miss");
                     getSons[1].Play();
+                    getSons[3].Play();
                 }
                 if (i == 4)
                 {
