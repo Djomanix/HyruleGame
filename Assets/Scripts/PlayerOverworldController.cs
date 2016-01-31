@@ -46,11 +46,14 @@ public class PlayerOverworldController : MonoBehaviour {
 		if(horizontal != 0 || vertical != 0)
 		{
 			anim.SetBool("IsWalking", true);
+
 		}
 		else
 		{
 			anim.SetBool("IsWalking", false);
 		}
+        
+
 
 		rb.transform.position += movement * speed;
 
