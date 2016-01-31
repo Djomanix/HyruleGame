@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class SceneFadeInFadeOut : MonoBehaviour
 {
@@ -67,6 +67,6 @@ public class SceneFadeInFadeOut : MonoBehaviour
         // If the screen is almost black...
         if (FadeImg.color.a >= 0.95f)
             // ... reload the level
-            SceneManager.LoadScene(SceneNumber);
+            Application.LoadLevel(SceneNumber);
     }
 }

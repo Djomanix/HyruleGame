@@ -32,7 +32,7 @@ public class PlayerOverworldController : MonoBehaviour {
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis ("Vertical");
 
-		Vector3 movement = new Vector3(horizontal, vertical, vertical);
+		Vector3 movement = new Vector3(horizontal, vertical, 0.0f);
 
 		if(Input.GetKey (KeyCode.LeftShift))
 		{
