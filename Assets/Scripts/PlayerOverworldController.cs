@@ -15,14 +15,15 @@ public class PlayerOverworldController : MonoBehaviour {
 	//Vector3 temp = new Vector3(0, 0, 0);
 
 	public float speed = 0.1f;
-
-	// Use this for initialization
-	void Start ()
+    public AudioSource pas = new AudioSource();
+    public AudioClip lesbonpasdhomme;
+    // Use this for initialization
+    void Start ()
 	{
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		dir = rb.transform.localScale;
-
+        pas = GetComponent<AudioSource>();
 		transform.position = spawnPoint.position;
 	}
 	
@@ -50,8 +51,11 @@ public class PlayerOverworldController : MonoBehaviour {
 
 		if(horizontal != 0 || vertical != 0)
 		{
-			anim.SetBool("IsWalking", true);
+            pas.PlayOneShot(lesbonpasdhomme, 0.7F);
+           
+            anim.SetBool("IsWalking", true);
 			anim.SetBool("IsDancing", false);
+           
         }
 		else
 		{
