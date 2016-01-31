@@ -11,6 +11,7 @@ public class MazeGenerator : MonoBehaviour
     public int height;
     public int width;
     int[,] maze;
+   
     // Use this for initialization
     void Start()
     {
@@ -18,6 +19,7 @@ public class MazeGenerator : MonoBehaviour
         maze = generateMaze();
         correctMaze();
         render();
+        
     }
 
     // Update is called once per frame
@@ -183,4 +185,5 @@ public class MazeGenerator : MonoBehaviour
             }
         }
     }
+   
 }
