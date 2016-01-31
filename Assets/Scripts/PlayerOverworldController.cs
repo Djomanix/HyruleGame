@@ -43,9 +43,15 @@ public class PlayerOverworldController : MonoBehaviour {
 			speed = 0.1f;
 		}
 
+		if(Input.GetKeyDown(KeyCode.F))
+		{
+			anim.SetBool("IsDancing", true);
+		}
+
 		if(horizontal != 0 || vertical != 0)
 		{
 			anim.SetBool("IsWalking", true);
+			anim.SetBool("IsDancing", false);
 		}
 		else
 		{
