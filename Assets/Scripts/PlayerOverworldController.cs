@@ -51,12 +51,8 @@ public class PlayerOverworldController : MonoBehaviour {
 		if(horizontal != 0 || vertical != 0)
 		{
 			anim.SetBool("IsWalking", true);
-<<<<<<< HEAD
-
-=======
 			anim.SetBool("IsDancing", false);
->>>>>>> origin/master
-		}
+        }
 		else
 		{
 			anim.SetBool("IsWalking", false);
